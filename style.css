@@ -1,0 +1,114 @@
+:root {
+  --bg: #111844;
+  --section: #4B5694;
+  --accent: #7288AE;
+  --text: #EAE0CF;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  max-width: 850px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.3rem;
+}
+
+.section {
+  background-color: var(--section);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Hover animation (subtle lift) */
+.section:hover {
+  transform: translateY(-4px);
+}
+
+/* Research/project items */
+.item {
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+/* Hover effect on items */
+.item:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 3px 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--text);
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  opacity: 0.8;
+}
+
+.focus {
+  margin-top: 1rem;
+  max-width: 600px;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
