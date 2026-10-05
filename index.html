@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f2f6f7;--ink:#14212b;--mute:#52636f;--line:#cfdadf;--accent:#0b5d7a;--chip:#e2edf1}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1a21;--ink:#e6eef2;--mute:#9bb0bc;--line:#243642;--accent:#6cc3e0;--chip:#172833}}
+:root{--bg:#e6edef;--card:#f4f7f8;--ink:#1d2a33;--mute:#5a6a75;--line:#d3dde1;--accent:#0b5d7a;--chip:#e2edf1}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e171d;--card:#16232c;--ink:#e2eaee;--mute:#9bb0bc;--line:#243642;--accent:#6cc3e0;--chip:#172833}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Instrument Sans",system-ui,sans-serif}
@@ -24,8 +24,9 @@ h1{font:600 2.1rem/1.1 Newsreader,serif;margin:0 0 .5rem}
 nav a{display:block;padding:.2rem 0 .2rem .9rem;color:var(--mute);border-left:2px solid var(--line);border-bottom:0}
 nav a.on,nav a:hover{color:var(--ink);border-left-color:var(--accent)}
 .links{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-size:.92rem}
-main{padding:3.5rem 0 4rem;min-width:0}
-section{margin-bottom:3.5rem}
+main{padding:3.5rem 0 3rem;min-width:0}
+section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.5rem 1.8rem;margin-bottom:1.25rem}
+section .item:last-child,section p:last-child{margin-bottom:0}
 h2{font:600 1.5rem Newsreader,serif;margin:0 0 1.2rem;padding-bottom:.5rem;border-bottom:1px solid var(--line)}
 h3{font:600 1.05rem "Instrument Sans",sans-serif;margin:0}
 p{margin:0 0 1rem;max-width:68ch}
@@ -43,6 +44,7 @@ footer{color:var(--mute);font-size:.85rem;border-top:1px solid var(--line);paddi
  nav{display:flex;flex-wrap:wrap;gap:.2rem 1rem;margin-bottom:.5rem}
  nav a{border:0;padding:0}
  .item{grid-template-columns:1fr;gap:.2rem}
+ section{padding:1.2rem 1.2rem;border-radius:14px}
 }
 </style>
 </head>
